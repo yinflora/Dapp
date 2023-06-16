@@ -8,7 +8,6 @@ import abi from './abi.json';
 import InfoBox from './components/Infobox';
 import {
   ETH_ADDRESS,
-  RPC_URL,
   TRANSACTION_HASH_1,
   TRANSACTION_HASH_2,
   USDC_CONTRACT_ADDRESS,
@@ -49,7 +48,9 @@ function App() {
 
   useEffect(() => {
     const initConnection = async () => {
-      const provider = new ethers.JsonRpcProvider(RPC_URL);
+      const provider = new ethers.JsonRpcProvider(
+        process.env.REACT_APP_RPC_URL
+      );
 
       const { formattedEth, formattedUsdc, formattedUsdt } = await getBalances(
         provider

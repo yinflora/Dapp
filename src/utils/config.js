@@ -1,7 +1,5 @@
 import { truncateMiddleString } from './stringHelper';
 
-const RPC_URL =
-  'https://eth-mainnet.alchemyapi.io/v2/hJ1r6qGO2qfTbEeuGb-i8GT6ljgksCDh';
 const ETH_ADDRESS = '0x33b8287511ac7F003902e83D642Be4603afCd876';
 const TRANSACTION_HASH_1 =
   '0x1eb6aab282d701d3d2eeb762bd426df625767e68ebf9c00b484905be1343304e';
@@ -65,7 +63,6 @@ const data = [
 
 export {
   ETH_ADDRESS,
-  RPC_URL,
   STRING_MAX_LENGTH,
   STRING_PREFIX_LENGTH,
   STRING_SUFFIX_LENGTH,
